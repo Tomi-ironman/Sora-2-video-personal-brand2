@@ -1,41 +1,199 @@
-# Prerequisites
+# 🔒 SECURITY - SENSITIVE FILES
+.env
+.env.local
+.env.production
+.env.staging
+.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+config.json
+secrets.json
+credentials.json
+original API key
+
+# 🤖 API KEYS & TOKENS
+*api_key*
+*bearer_token*
+*client_secret*
+*access_token*
+*refresh_token*
+
+# 📊 RESEARCH DATA & LOGS
+*research*.json
+*market_research*.json
+*REAL_research*.json
+*SMART_research*.json
+*PARTIAL_research*.json
+*COMPREHENSIVE_research*.json
+*FREE_research*.json
+research_cache.pkl
+*.log
+*twitter_log*.json
+*automation_log*.json
+
+# 🎬 VIDEO & MEDIA FILES
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wmv
+*.flv
+*.webm
+*.m4v
+videos/
+media/
+assets/
+footage/
+
+# 🖼️ IMAGE FILES
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.svg
+*.ico
+*.webp
+images/
+screenshots/
+
+# 🎵 AUDIO FILES
+*.mp3
+*.wav
+*.flac
+*.aac
+*.ogg
+*.wma
+*.m4a
+audio/
+samples/
+sounds/
+
+# 📱 BROWSER DATA
+browser_data/
+user_data/
+profiles/
+cookies/
+sessions/
+*.crx
+
+# 🐍 PYTHON
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 📦 PACKAGE MANAGERS
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# 🔧 IDE & EDITORS
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# 📊 DATA & DATABASES
+*.db
+*.sqlite
+*.sqlite3
+data/
+database/
+backups/
+
+# 🧪 TESTING
+.coverage
+.pytest_cache/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# 📝 DOCUMENTATION BUILD
+docs/_build/
+.readthedocs.yml
+
+# 🚀 DEPLOYMENT
+.vercel
+.netlify
+.aws/
+.gcp/
+.azure/
+
+# 🔄 TEMPORARY FILES
+*.tmp
+*.temp
+temp/
+tmp/
+.cache/
+
+# Prerequisites (original)
 *.d
 
-# Compiled Object files
+# Compiled Object files (original)
 *.slo
 *.lo
 *.o
 *.obj
 
-# Precompiled Headers
+# Precompiled Headers (original)
 *.gch
 *.pch
 
-# Linker files
+# Linker files (original)
 *.ilk
 
-# Debugger Files
+# Debugger Files (original)
 *.pdb
 
-# Compiled Dynamic libraries
-*.so
+# Compiled Dynamic libraries (original)
 *.dylib
 *.dll
 
-# Fortran module files
+# Fortran module files (original)
 *.mod
 *.smod
 
-# Compiled Static libraries
+# Compiled Static libraries (original)
 *.lai
 *.la
 *.a
 *.lib
 
-# Executables
+# Executables (original)
 *.exe
 *.out
 *.app
 
-# debug information files
+# debug information files (original)
 *.dwo

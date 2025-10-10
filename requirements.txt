@@ -1,0 +1,20 @@
+gosora2-direct-api
+
+# Multi-Platform Automation
+tweepy>=4.14.0
+openai>=0.28.0
+python-dotenv>=1.0.0
+praw>=7.7.0
+python-dotenv
+rich>=13.0.0
+requests>=2.31.0
+Pillow
+elevenlabs
+moviepy
+imageio-ffmpeg
+openai>=1.0.0
+
+# Twitter Automation
+tweepy>=4.14.0
+openai>=0.28.0
+python-dotenv>=1.0.0

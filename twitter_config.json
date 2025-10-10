@@ -1,0 +1,26 @@
+{
+  "monitoring": {
+    "check_interval": 300,
+    "max_responses_per_cycle": 5,
+    "rate_limit_delay": 30
+  },
+  "keywords": [
+    "podcast file organization",
+    "audio library mess",
+    "sound design workflow",
+    "too many audio files",
+    "can't find samples",
+    "audio asset management",
+    "podcast workflow chaos",
+    "drowning in files",
+    "audio professional burnout",
+    "sound designer struggle",
+    "episode organization",
+    "audio collaboration nightmare"
+  ],
+  "response_templates": {
+    "empathetic": "I totally feel this pain! ",
+    "helpful": "Created a video that might help with this exact problem. ",
+    "closing": "Hope this helps! \ud83c\udfa7"
+  }
+}
