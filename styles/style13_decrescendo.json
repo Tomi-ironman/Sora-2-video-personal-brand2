@@ -1,0 +1,6 @@
+{
+  "name": "decrescendo",
+  "pacing": {"hook_duration": 0.12, "story_duration": 1.9, "text_duration": 1.3, "personal_duration": 1.5},
+  "text": {"mode": "center", "fontsize": 118, "position": "center"},
+  "grade": {"filter": "eq=contrast=1.02"}
+}

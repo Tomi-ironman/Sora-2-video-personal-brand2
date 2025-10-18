@@ -1,0 +1,6 @@
+{
+  "name": "golden_hour",
+  "pacing": {"hook_duration": 0.15, "story_duration": 2.3, "text_duration": 1.6, "personal_duration": 1.6},
+  "text": {"mode": "center", "fontsize": 122, "position": "top"},
+  "grade": {"filter": "eq=gamma_r=1.05:gamma_g=1.02:gamma_b=0.98:saturation=1.10"}
+}

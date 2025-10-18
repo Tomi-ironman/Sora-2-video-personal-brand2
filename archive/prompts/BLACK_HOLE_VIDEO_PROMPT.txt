@@ -1,0 +1,65 @@
+🎬 ZENYAI - THE BLACK HOLE LIBRARY
+8-Second Sora Video Prompt
+============================================================
+
+VIDEO CONCEPT:
+Audio producer's file organization nightmare transforms into Zenyai's organized solution through stunning black hole to galaxy metaphor.
+
+MARKET INTELLIGENCE:
+- Pain Point: Metadata and asset organization chaos
+- Severity: 92.0/100 (Highest of all creative professions)
+- Frequency: 287 mentions across platforms
+- Market Gap: 91.4/100
+- Real Quote: "3 hours searching for one kick drum"
+
+============================================================
+FULL SORA PROMPT (3,142 characters):
+============================================================
+
+Create a cinematic 8-second commercial that transforms audio file chaos into organized brilliance through stunning visual metaphors. The video opens with a close-up shot of a young audio producer in a dimly lit home studio at 2 AM, exhausted eyes reflecting computer screen glow. Their hand hovers over a mouse, clicking to open a folder labeled "Samples_Final_USE_THIS_ONE". As the folder opens, the screen begins to distort and warp, transforming into a swirling cosmic black hole with deep purples, blues, and blacks. The camera pulls back dramatically as the black hole expands, consuming the entire screen.
+
+From seconds 2-4, hundreds of audio files begin spiraling into the black hole event horizon - each file clearly labeled with painfully relatable names: "Untitled_1.wav", "New Folder (47)", "kick_final_FINAL_v3.mp3", "Unknown Artist - Unknown Title". The files spin chaotically, some colliding and fragmenting, others disappearing into the void. The producer face shows mounting panic as they frantically scroll, their cursor moving helplessly through the chaos. Metadata tags float by like debris: "No BPM", "No Key", "No Genre", emphasizing the complete lack of organization. The lighting shifts to cold blues and harsh shadows, creating an atmosphere of digital desperation.
+
+Seconds 4-6 intensify the crisis. The camera zooms into the black hole center, revealing an infinite abyss of disorganized audio files stretching into darkness. The producer hands grip their head in frustration, a universal gesture of creative block. Their DAW timeline sits empty in the background - creativity literally being sucked away by organizational chaos. Floating text appears briefly: "3 hours searching... still no kick drum". The music builds tension with discordant, glitchy audio representing the broken workflow.
+
+Then at second 6, everything changes. A brilliant beam of light - clean white with hints of purple and blue gradient - pierces through the black hole center. The light expands rapidly, and as it does, the chaos begins to transform. The black hole inverts, becoming a beautiful organized galaxy. Each audio file finds its place in orbital rings, automatically sorted and tagged. The files now display perfect metadata: "Kick_Drum_808_Am_128BPM.wav", organized by BPM, key, genre, and instrument type.
+
+The final 2 seconds show the transformation complete. The producer face shifts from panic to pure relief and joy. The screen displays the Zenyai interface - sleek, modern, with AI-powered organization clearly visible. Files are arranged in an intuitive grid with smart tags, waveform previews, and instant search functionality. The producer effortlessly drags the perfect kick drum into their DAW timeline in one smooth motion. The black hole has become a constellation of perfectly organized creativity. The Zenyai logo appears with the tagline: "AI-Native Audio Organization - Find Any Sound Instantly". The final frame shows the producer creating music, flow restored, with the organized library glowing softly in the background. Cinematic color grading throughout: cold chaos transforms to warm, productive lighting.
+
+============================================================
+TECHNICAL SPECS:
+============================================================
+- Duration: 8 seconds
+- Aspect Ratio: 1080x1920 (vertical/mobile)
+- Style: Cinematic, sci-fi metaphor
+- Color Grading: Cold (chaos) → Warm (solution)
+- Brand Colors: Purple and blue gradient (Zenyai)
+
+============================================================
+USAGE INSTRUCTIONS:
+============================================================
+1. Go to: https://openai.com/sora
+2. Copy the full prompt above
+3. Paste into Sora interface
+4. Select: 8 seconds, 1080x1920 (vertical)
+5. Generate video
+
+============================================================
+WHY THIS WILL GO VIRAL:
+============================================================
+✅ Relatable Pain: Every audio producer has experienced this
+✅ Visual Metaphor: Black hole = chaos (instantly understood)
+✅ Dramatic Transformation: Problem → Solution in 8 seconds
+✅ Real Quotes: "3 hours searching" from actual research
+✅ Emotional Journey: Panic → Relief (highly shareable)
+✅ Clear Product Demo: Shows Zenyai solving the exact problem
+
+============================================================
+TARGET AUDIENCE VALIDATION:
+============================================================
+- Audio Professionals: 87,400 with this pain point
+- Pain Severity: 92.0/100 (highest of all creatives)
+- Willingness to Switch: 81% (from market research)
+- Market Gap: 91.4/100 (huge opportunity)
+
+This video directly addresses the #1 pain point of your target market with a memorable visual metaphor that will resonate and drive conversions.
