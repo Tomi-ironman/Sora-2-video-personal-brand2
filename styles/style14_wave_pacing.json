@@ -1,0 +1,6 @@
+{
+  "name": "wave_pacing",
+  "pacing": {"hook_duration": 0.14, "story_duration": 2.2, "text_duration": 1.4, "personal_duration": 1.5},
+  "text": {"mode": "center", "fontsize": 116, "position": "center"},
+  "grade": {"filter": null}
+}

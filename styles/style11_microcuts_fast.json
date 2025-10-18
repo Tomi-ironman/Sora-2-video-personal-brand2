@@ -1,0 +1,6 @@
+{
+  "name": "microcuts_fast",
+  "pacing": {"hook_duration": 0.10, "story_duration": 1.5, "text_duration": 1.1, "personal_duration": 1.2},
+  "text": {"mode": "center", "fontsize": 112, "position": "center"},
+  "grade": {"filter": null}
+}

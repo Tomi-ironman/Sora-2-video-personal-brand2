@@ -1,0 +1,6 @@
+{
+  "name": "text_top",
+  "pacing": {"hook_duration": 0.15, "story_duration": 2.2, "text_duration": 1.5, "personal_duration": 1.5},
+  "text": {"mode": "center", "fontsize": 120, "position": "top"},
+  "grade": {"filter": null}
+}
