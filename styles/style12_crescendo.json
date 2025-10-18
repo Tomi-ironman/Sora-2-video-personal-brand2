@@ -1,0 +1,6 @@
+{
+  "name": "crescendo",
+  "pacing": {"hook_duration": 0.16, "story_duration": 2.6, "text_duration": 1.6, "personal_duration": 1.4},
+  "text": {"mode": "center", "fontsize": 118, "position": "center"},
+  "grade": {"filter": "eq=contrast=1.04"}
+}

@@ -1,0 +1,6 @@
+{
+  "name": "full_card",
+  "pacing": {"hook_duration": 0.16, "story_duration": 2.4, "text_duration": 1.8, "personal_duration": 1.4},
+  "text": {"mode": "full_card", "fontsize": 150, "position": "center"},
+  "grade": {"filter": null}
+}

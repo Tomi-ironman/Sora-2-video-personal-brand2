@@ -1,0 +1,6 @@
+{
+  "name": "warm_film",
+  "pacing": {"hook_duration": 0.16, "story_duration": 2.6, "text_duration": 1.7, "personal_duration": 1.6},
+  "text": {"mode": "center", "fontsize": 118, "position": "center"},
+  "grade": {"filter": "eq=saturation=1.06:contrast=1.05,curves=psfile=null"}
+}

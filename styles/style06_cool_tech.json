@@ -1,0 +1,6 @@
+{
+  "name": "cool_tech",
+  "pacing": {"hook_duration": 0.13, "story_duration": 2.1, "text_duration": 1.4, "personal_duration": 1.5},
+  "text": {"mode": "center", "fontsize": 116, "position": "center"},
+  "grade": {"filter": "hue=h=10:s=1.05,eq=contrast=1.06"}
+}

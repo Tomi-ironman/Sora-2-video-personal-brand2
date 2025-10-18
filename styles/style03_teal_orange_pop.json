@@ -1,0 +1,6 @@
+{
+  "name": "teal_orange_pop",
+  "pacing": {"hook_duration": 0.14, "story_duration": 2.0, "text_duration": 1.4, "personal_duration": 1.5},
+  "text": {"mode": "center", "fontsize": 120, "position": "center"},
+  "grade": {"filter": "curves=preset=strong_contrast,eq=saturation=1.18"}
+}

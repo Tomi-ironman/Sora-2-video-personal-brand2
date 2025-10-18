@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenyai Market Intelligence Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 min-h-screen">
+    <div x-data="marketIntelligence()" class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-5xl font-bold text-white mb-4">
+                <i class="fas fa-brain text-purple-400"></i>
+                Zenyai Market Intelligence
+            </h1>
+            <p class="text-xl text-gray-300">Your AI-Powered Market Research Assistant</p>
+            <p class="text-sm text-gray-400 mt-2">Comprehensive market analysis • Competitor intelligence • Financial projections</p>
+        </div>
+
+        <!-- Main Analysis Form -->
+        <div class="max-w-4xl mx-auto bg-white/10 backdrop-blur-lg rounded-2xl p-8 shadow-2xl border border-white/20">
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold text-white mb-4">
+                    <i class="fas fa-lightbulb text-yellow-400"></i>
+                    Analyze Market Opportunity
+                </h2>
+                
+                <form @submit.prevent="analyzeMarket()" class="space-y-6">
+                    <!-- Idea Description -->
+                    <div>
+                        <label class="block text-white font-semibold mb-2">
+                            <i class="fas fa-rocket text-blue-400"></i>
+                            Business Idea Description
+                        </label>
+                        <textarea 
+                            x-model="formData.idea"
+                            class="w-full p-4 rounded-lg bg-white/20 text-white placeholder-gray-300 border border-white/30 focus:border-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-400/50"
+                            rows="4"
+                            placeholder="Describe your business idea in detail..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <!-- Target Market -->
+                    <div>
+                        <label class="block text-white font-semibold mb-2">
+                            <i class="fas fa-users text-green-400"></i>
+                            Target Market (Optional)
+                        </label>
+                        <input 
+                            x-model="formData.target_market"
+                            type="text"
+                            class="w-full p-4 rounded-lg bg-white/20 text-white placeholder-gray-300 border border-white/30 focus:border-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-400/50"
+                            placeholder="e.g., music producers, small businesses, developers..."
+                        />
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button 
+                        type="submit"
+                        :disabled="loading"
+                        class="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                        <span x-show="!loading">
+                            <i class="fas fa-search mr-2"></i>
+                            Analyze Market Opportunity
+                        </span>
+                        <span x-show="loading">
+                            <i class="fas fa-spinner fa-spin mr-2"></i>
+                            Analyzing Market...
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div x-show="results" class="max-w-6xl mx-auto mt-12">
+            <!-- Executive Summary -->
+            <div x-show="results?.executive_summary" class="bg-white/10 backdrop-blur-lg rounded-2xl p-8 shadow-2xl border border-white/20 mb-8">
+                <h3 class="text-2xl font-bold text-white mb-6">
+                    <i class="fas fa-chart-line text-green-400"></i>
+                    Executive Summary
+                </h3>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white/10 rounded-lg p-6">
+                        <h4 class="text-lg font-semibold text-white mb-2">Opportunity Rating</h4>
+                        <p class="text-2xl font-bold" x-text="results?.executive_summary?.opportunity_rating"></p>
+                    </div>
+                    
+                    <div class="bg-white/10 rounded-lg p-6">
+                        <h4 class="text-lg font-semibold text-white mb-2">Market Size</h4>
+                        <p class="text-lg text-gray-300" x-text="results?.executive_summary?.market_size"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Analysis Grid -->
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Market Size Analysis -->
+                <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 shadow-2xl border border-white/20">
+                    <h4 class="text-xl font-bold text-white mb-4">
+                        <i class="fas fa-globe text-blue-400"></i>
+                        Market Size Analysis
+                    </h4>
+                    <div x-show="results?.detailed_analysis?.analysis?.market_size">
+                        <div class="space-y-3">
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Estimated TAM:</span>
+                                <span class="text-white font-semibold" x-text="'$' + (results?.detailed_analysis?.analysis?.market_size?.estimated_tam || 0).toLocaleString()"></span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Search Volume:</span>
+                                <span class="text-white font-semibold" x-text="(results?.detailed_analysis?.analysis?.market_size?.total_search_volume || 0).toLocaleString()"></span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Category:</span>
+                                <span class="text-white font-semibold" x-text="results?.detailed_analysis?.analysis?.market_size?.market_size_category"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pain Points Analysis -->
+                <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 shadow-2xl border border-white/20">
+                    <h4 class="text-xl font-bold text-white mb-4">
+                        <i class="fas fa-exclamation-triangle text-red-400"></i>
+                        Pain Points Analysis
+                    </h4>
+                    <div x-show="results?.detailed_analysis?.analysis?.pain_points">
+                        <div class="space-y-3">
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Pain Score:</span>
+                                <span class="text-white font-semibold" x-text="(results?.detailed_analysis?.analysis?.pain_points?.pain_score || 0) + '/100'"></span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Pain Level:</span>
+                                <span class="text-white font-semibold" x-text="results?.detailed_analysis?.analysis?.pain_points?.pain_level"></span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Community Size:</span>
+                                <span class="text-white font-semibold" x-text="(results?.detailed_analysis?.analysis?.pain_points?.community_size || 0).toLocaleString()"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Financial Projections -->
+                <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 shadow-2xl border border-white/20">
+                    <h4 class="text-xl font-bold text-white mb-4">
+                        <i class="fas fa-dollar-sign text-green-400"></i>
+                        Financial Projections
+                    </h4>
+                    <div x-show="results?.detailed_analysis?.analysis?.financial">
+                        <div class="space-y-4">
+                            <div class="border-b border-white/20 pb-2">
+                                <div class="flex justify-between">
+                                    <span class="text-gray-300">Year 1 Revenue:</span>
+                                    <span class="text-white font-semibold" x-text="'$' + Math.round(results?.detailed_analysis?.analysis?.financial?.year_1?.revenue || 0).toLocaleString()"></span>
+                                </div>
+                            </div>
+                            <div class="border-b border-white/20 pb-2">
+                                <div class="flex justify-between">
+                                    <span class="text-gray-300">Year 3 Revenue:</span>
+                                    <span class="text-white font-semibold" x-text="'$' + Math.round(results?.detailed_analysis?.analysis?.financial?.year_3?.revenue || 0).toLocaleString()"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-300">Year 5 Revenue:</span>
+                                    <span class="text-white font-semibold" x-text="'$' + Math.round(results?.detailed_analysis?.analysis?.financial?.year_5?.revenue || 0).toLocaleString()"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recommendations -->
+                <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 shadow-2xl border border-white/20">
+                    <h4 class="text-xl font-bold text-white mb-4">
+                        <i class="fas fa-lightbulb text-yellow-400"></i>
+                        Recommendations
+                    </h4>
+                    <div x-show="results?.recommendations">
+                        <ul class="space-y-2">
+                            <template x-for="recommendation in results?.recommendations || []">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-400 mt-1 mr-2"></i>
+                                    <span class="text-gray-300" x-text="recommendation"></span>
+                                </li>
+                            </template>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Download Report Button -->
+            <div class="text-center mt-8">
+                <button 
+                    @click="downloadReport()"
+                    x-show="reportFile"
+                    class="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105"
+                >
+                    <i class="fas fa-download mr-2"></i>
+                    Download Full Report
+                </button>
+            </div>
+        </div>
+
+        <!-- Error Message -->
+        <div x-show="error" class="max-w-4xl mx-auto mt-8 bg-red-500/20 border border-red-500/50 rounded-lg p-4">
+            <div class="flex items-center">
+                <i class="fas fa-exclamation-circle text-red-400 mr-2"></i>
+                <span class="text-red-300" x-text="error"></span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function marketIntelligence() {
+            return {
+                formData: {
+                    idea: '',
+                    target_market: ''
+                },
+                loading: false,
+                results: null,
+                reportFile: null,
+                error: null,
+
+                async analyzeMarket() {
+                    this.loading = true;
+                    this.error = null;
+                    this.results = null;
+
+                    try {
+                        const response = await fetch('/analyze', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify(this.formData)
+                        });
+
+                        const data = await response.json();
+
+                        if (data.success) {
+                            this.results = data.results;
+                            this.reportFile = data.report_file;
+                        } else {
+                            this.error = data.error || 'Analysis failed';
+                        }
+                    } catch (err) {
+                        this.error = 'Network error: ' + err.message;
+                    } finally {
+                        this.loading = false;
+                    }
+                },
+
+                downloadReport() {
+                    if (this.reportFile) {
+                        window.open(`/report/${this.reportFile}`, '_blank');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

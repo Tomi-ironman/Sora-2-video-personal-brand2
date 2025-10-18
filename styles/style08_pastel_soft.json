@@ -1,0 +1,6 @@
+{
+  "name": "pastel_soft",
+  "pacing": {"hook_duration": 0.16, "story_duration": 2.6, "text_duration": 1.8, "personal_duration": 1.7},
+  "text": {"mode": "center", "fontsize": 124, "position": "center"},
+  "grade": {"filter": "eq=contrast=0.96:saturation=1.06"}
+}
