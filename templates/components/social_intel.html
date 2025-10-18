@@ -1,0 +1,183 @@
+<!-- Social Intelligence Dashboard Component -->
+<div class="space-y-6">
+    <!-- Social Metrics Overview -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="metric-card rounded-xl p-6">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-gray-400 text-sm">Reddit Mentions</p>
+                    <p class="text-2xl font-bold">15.4K</p>
+                    <p class="text-green-500 text-sm flex items-center mt-1">
+                        <i class="fas fa-arrow-up mr-1"></i>
+                        +23% this week
+                    </p>
+                </div>
+                <div class="w-12 h-12 bg-orange-500/20 rounded-lg flex items-center justify-center">
+                    <i class="fab fa-reddit text-orange-400"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="metric-card rounded-xl p-6">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-gray-400 text-sm">Twitter Sentiment</p>
+                    <p class="text-2xl font-bold">73%</p>
+                    <p class="text-blue-500 text-sm flex items-center mt-1">
+                        <i class="fas fa-heart mr-1"></i>
+                        Positive
+                    </p>
+                </div>
+                <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center">
+                    <i class="fab fa-twitter text-blue-400"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="metric-card rounded-xl p-6">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-gray-400 text-sm">YouTube Videos</p>
+                    <p class="text-2xl font-bold">2.8K</p>
+                    <p class="text-red-500 text-sm flex items-center mt-1">
+                        <i class="fas fa-play mr-1"></i>
+                        Content Rich
+                    </p>
+                </div>
+                <div class="w-12 h-12 bg-red-500/20 rounded-lg flex items-center justify-center">
+                    <i class="fab fa-youtube text-red-400"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Platform Breakdown -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="card-dark rounded-xl p-6">
+            <h3 class="text-lg font-semibold mb-4">Platform Activity</h3>
+            <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center">
+                            <i class="fab fa-reddit text-white text-sm"></i>
+                        </div>
+                        <div>
+                            <p class="font-medium">Reddit</p>
+                            <p class="text-xs text-gray-400">8.5K mentions</p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <div class="w-24 bg-gray-700 rounded-full h-2">
+                            <div class="bg-orange-500 h-2 rounded-full" style="width: 65%"></div>
+                        </div>
+                        <p class="text-xs text-gray-400 mt-1">65% sentiment</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
+                            <i class="fab fa-twitter text-white text-sm"></i>
+                        </div>
+                        <div>
+                            <p class="font-medium">Twitter</p>
+                            <p class="text-xs text-gray-400">4.2K mentions</p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <div class="w-24 bg-gray-700 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full" style="width: 78%"></div>
+                        </div>
+                        <p class="text-xs text-gray-400 mt-1">78% sentiment</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 bg-red-500 rounded-lg flex items-center justify-center">
+                            <i class="fab fa-youtube text-white text-sm"></i>
+                        </div>
+                        <div>
+                            <p class="font-medium">YouTube</p>
+                            <p class="text-xs text-gray-400">2.7K videos</p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <div class="w-24 bg-gray-700 rounded-full h-2">
+                            <div class="bg-red-500 h-2 rounded-full" style="width: 82%"></div>
+                        </div>
+                        <p class="text-xs text-gray-400 mt-1">82% positive</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-dark rounded-xl p-6">
+            <h3 class="text-lg font-semibold mb-4">Trending Topics</h3>
+            <div class="space-y-3">
+                <div class="flex items-center justify-between p-3 bg-gray-800/50 rounded-lg">
+                    <div>
+                        <p class="font-medium">#AudioOrganization</p>
+                        <p class="text-xs text-gray-400">Music production workflow</p>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-green-500/20 text-green-400 px-2 py-1 rounded-full text-xs">Hot</span>
+                        <span class="text-sm font-bold">1.2K</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between p-3 bg-gray-800/50 rounded-lg">
+                    <div>
+                        <p class="font-medium">#SampleLibrary</p>
+                        <p class="text-xs text-gray-400">Sound management tools</p>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-yellow-500/20 text-yellow-400 px-2 py-1 rounded-full text-xs">Rising</span>
+                        <span class="text-sm font-bold">847</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between p-3 bg-gray-800/50 rounded-lg">
+                    <div>
+                        <p class="font-medium">#DAWWorkflow</p>
+                        <p class="text-xs text-gray-400">Digital audio workstation</p>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-blue-500/20 text-blue-400 px-2 py-1 rounded-full text-xs">Stable</span>
+                        <span class="text-sm font-bold">623</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pain Point Discussions -->
+    <div class="card-dark rounded-xl p-6">
+        <h3 class="text-lg font-semibold mb-4">Pain Point Discussions</h3>
+        <div class="space-y-4">
+            <div class="border-l-4 border-red-500 pl-4 py-2">
+                <p class="font-medium text-red-400">File Organization Chaos</p>
+                <p class="text-sm text-gray-400 mt-1">"I spend more time looking for samples than making music" - r/WeAreTheMusicMakers</p>
+                <div class="flex items-center space-x-4 mt-2">
+                    <span class="text-xs text-gray-500">Reddit • 2.3K upvotes • 847 comments</span>
+                </div>
+            </div>
+
+            <div class="border-l-4 border-yellow-500 pl-4 py-2">
+                <p class="font-medium text-yellow-400">Metadata Nightmare</p>
+                <p class="text-sm text-gray-400 mt-1">"My sample library is a mess. No tags, no organization, just chaos" - @producer_mike</p>
+                <div class="flex items-center space-x-4 mt-2">
+                    <span class="text-xs text-gray-500">Twitter • 1.8K likes • 234 retweets</span>
+                </div>
+            </div>
+
+            <div class="border-l-4 border-blue-500 pl-4 py-2">
+                <p class="font-medium text-blue-400">Workflow Inefficiency</p>
+                <p class="text-sm text-gray-400 mt-1">"How to organize 50GB of samples? Please help!" - YouTube comment</p>
+                <div class="flex items-center space-x-4 mt-2">
+                    <span class="text-xs text-gray-500">YouTube • 892 likes • 156 replies</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

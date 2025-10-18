@@ -1,0 +1,6 @@
+{
+  "name": "lower_thirds",
+  "pacing": {"hook_duration": 0.15, "story_duration": 2.2, "text_duration": 1.5, "personal_duration": 1.5},
+  "text": {"mode": "lower_third", "fontsize": 96, "position": "bottom"},
+  "grade": {"filter": "eq=contrast=1.03"}
+}
